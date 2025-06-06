@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <code>fclp_wl</code>
+    <name>Module First choice language PopUp</name>
+    <version>2.0.6</version>
+    <author>Eugene Mazuryk</author>
+    <link>https://mazuryk-e.weblorem.com</link>
+
+    <file path="catalog/controller/common/footer.php">
+        <operation error="skip">
+            <search><![CDATA[$this->load->language('common/footer');]]></search>
+            <add position="after">
+                <![CDATA[
+        // First choice language popup
+		$data['fclp_wl'] = $this->load->controller('extension/module/fclp_wl');]]>
+            </add>
+        </operation>
+    </file>
+    <file path="catalog/view/theme/*/template/common/footer.tpl">
+        <operation error="skip">
+            <search><![CDATA[</footer>]]></search>
+            <add position="after">
+                <![CDATA[
+<?php if ($fclp_wl) { ?>
+    <!-- First choice language popup -->
+    <?php echo $fclp_wl; ?>
+<?php } ?>
+                ]]>
+            </add>
+        </operation>
+    </file>
+
+</modification>
