@@ -1,7 +1,5 @@
 # First Choice Language Popup for OpenCart 2x
 
----
-
 ## Description
 The **First Choice Language Popup** module adds a popup window for language selection on the first visit to an OpenCart website. This enhances user experience by allowing visitors to quickly choose their preferred language, ideal for multilingual online stores.
 
@@ -58,8 +56,6 @@ This module is distributed under the [MIT License](LICENSE). Feel free to use an
 Thank you to the OpenCart community for support and feedback!
 
 # Початковий вибір мови PopUp для OpenCart 2x
-
----
 
 ## Опис
 Модуль **First Choice Language Popup** додає спливаюче вікно для вибору мови при першому відвідуванні сайту на платформі OpenCart. Це покращує користувацький досвід, дозволяючи відвідувачам швидко обрати мову сайту, що особливо корисно для багатомовних інтернет-магазинів.
